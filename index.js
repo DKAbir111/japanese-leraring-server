@@ -1,21 +1,25 @@
-const express = require('express')
-const app = express()
-const cors = require('cors')
-const mongoose = require('mongoose')
+const express = require('express');
+const app = express();
+const cors = require('cors');
+const mongoose = require('mongoose');
+const authRoutes = require('./routes/authRoutes');
+const lessonRoute = require('./routes/lessonRoute')
 
-require('dotenv').config()
+require('dotenv').config();
 
-//middleware
-app.use(cors())
-app.use(express.json())
+// Middleware
+app.use(cors());
+app.use(express.json());
 
 // Routes
-app.get('/', () => {
-    res.send('Hello World!')
-})
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 
+app.use("/api/auth", authRoutes);
+app.use("/api", lessonRoute);
 
-//Database Connection
+// Database Connection
 mongoose
     .connect(process.env.MONGO_URI)
     .then(() => {

@@ -4,6 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
 const lessonRoute = require('./routes/lessonRoute');
+const vocabularyRoute = require('./routes/VocabularyRoute');
 const verificationRoute = require('./routes/verificationRoute');
 
 
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api", lessonRoute);
+app.use("/api", vocabularyRoute);
 app.use("/api/verify", verificationRoute);
 
 // Database Connection

@@ -1,8 +1,9 @@
-const express = require('express')
-const { addlesson } = require('../controllers/lessonController')
-
+const express = require('express');
 const router = express.Router();
+const { addlesson } = require('../controllers/lessonController');
+const { authenticateToken, authorizeRole } = require('../middleware/authMiddleware');
 
-router.post('/lesson', addlesson)
+// Protect the route and allow only 'admin' to access
+router.post('/add-lesson', authenticateToken, authorizeRole('admin'), addlesson);
 
 module.exports = router;

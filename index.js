@@ -3,7 +3,9 @@ const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/authRoutes');
-const lessonRoute = require('./routes/lessonRoute')
+const lessonRoute = require('./routes/lessonRoute');
+const verificationRoute = require('./routes/verificationRoute');
+
 
 require('dotenv').config();
 
@@ -18,6 +20,7 @@ app.get('/', (req, res) => {
 
 app.use("/api/auth", authRoutes);
 app.use("/api", lessonRoute);
+app.use("/api/verify", verificationRoute);
 
 // Database Connection
 mongoose

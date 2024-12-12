@@ -47,7 +47,42 @@ const login = async (req, res) => {
     }
 };
 
+const getAllUsers = async (req, res) => {
+    try {
+        const users = await User.find({}, '-password');
+        res.status(200).json(users);
+    } catch (error) {
+        res.status(500).json({ message: 'Something went wrong', error: error.message });
+    }
+};
+
+// Update a role by ID
+const updateUserRole = async (req, res) => {
+    try {
+        const { role, email } = req.body;
+        if (email === 'dkabir@gmail.com') {
+            return res.status(403).json({ message: "Role of 'superadmin' cannot be updated." });
+        }
+        const newRole = await User.findByIdAndUpdate(
+            req.params.id,
+            { role },
+            { new: true }
+        );
+
+        if (!newRole) {
+            return res.status(404).json({ message: 'User  not found' });
+        }
+        res.status(200).json({ message: 'User Role update successfully', newRole });
+    } catch (err) {
+        res.status(500).json({ message: 'Something went wrong', error: err.message });
+    }
+};
+
+
+
 module.exports = {
     register,
-    login
+    login,
+    getAllUsers,
+    updateUserRole
 };

@@ -86,8 +86,6 @@ const deleteVocabulary = async (req, res) => {
 };
 
 
-
-
 module.exports = {
     addVocabulary,
     fetchVocabulary,

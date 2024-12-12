@@ -17,7 +17,6 @@ const addVocabulary = async (req, res) => {
             adminEmail
         });
         await newVocabulary.save();
-
         res.status(201).json({ message: 'Lesson added successfully' });
     } catch (err) {
 

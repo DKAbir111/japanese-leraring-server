@@ -6,6 +6,7 @@ const authRoutes = require('./routes/authRoutes');
 const lessonRoute = require('./routes/lessonRoute');
 const vocabularyRoute = require('./routes/VocabularyRoute');
 const verificationRoute = require('./routes/verificationRoute');
+const dashboardRoute = require('./routes/dashboardRoute');
 
 
 require('dotenv').config();
@@ -23,6 +24,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api", lessonRoute);
 app.use("/api", vocabularyRoute);
 app.use("/api/verify", verificationRoute);
+app.use("/api", dashboardRoute);
 
 // Database Connection
 mongoose

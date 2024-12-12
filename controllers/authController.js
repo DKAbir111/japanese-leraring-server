@@ -56,28 +56,32 @@ const getAllUsers = async (req, res) => {
     }
 };
 
-// Update a role by ID
+
 const updateUserRole = async (req, res) => {
     try {
-        const { role, email } = req.body;
-        if (email === 'dkabir@gmail.com') {
+
+        const user = await User.findById(req.params.id);
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        if (user.email === 'dkabir@gmail.com') {
             return res.status(403).json({ message: "Role of 'superadmin' cannot be updated." });
         }
-        const newRole = await User.findByIdAndUpdate(
+
+        const { role } = req.body;
+        const updatedUser = await User.findByIdAndUpdate(
             req.params.id,
             { role },
             { new: true }
         );
 
-        if (!newRole) {
-            return res.status(404).json({ message: 'User  not found' });
-        }
-        res.status(200).json({ message: 'User Role update successfully', newRole });
+        res.status(200).json({ message: 'User role updated successfully', updatedUser });
     } catch (err) {
         res.status(500).json({ message: 'Something went wrong', error: err.message });
     }
 };
-
 
 
 module.exports = {

@@ -6,7 +6,7 @@ const { authenticateToken } = require('../middleware/authMiddleware');
 router.post('/register', register)
 router.post('/login', login)
 router.get('/all-users', getAllUsers);
-router.put('/update-role', authenticateToken, updateUserRole);
+router.put('/update-role/:id', authenticateToken, updateUserRole);
 
 
 module.exports = router;

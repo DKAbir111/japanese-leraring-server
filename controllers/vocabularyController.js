@@ -84,6 +84,22 @@ const deleteVocabulary = async (req, res) => {
         res.status(500).json({ message: "Failed to delete vocabulary" });
     }
 };
+// Fetch vocabulary by lesson number
+const fetchVocabularyByLessonNo = async (req, res) => {
+    try {
+        const { lessonNo } = req.params;
+        const vocabularies = await Vocabulary.find({ lessonNo });
+
+        if (!vocabularies || vocabularies.length === 0) {
+            return res.status(404).json({ message: "No vocabulary found for this lesson" });
+        }
+
+        res.status(200).json(vocabularies);
+    } catch (error) {
+        console.error("Error fetching vocabulary:", error);
+        res.status(500).json({ message: "Internal Server Error" });
+    }
+};
 
 
 module.exports = {
@@ -91,5 +107,6 @@ module.exports = {
     fetchVocabulary,
     findVocabularyById,
     deleteVocabulary,
-    editVocabulary
+    editVocabulary,
+    fetchVocabularyByLessonNo
 };

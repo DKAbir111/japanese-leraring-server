@@ -7,7 +7,8 @@ const {
     fetchVocabulary,
     findVocabularyById,
     editVocabulary,
-    deleteVocabulary
+    deleteVocabulary,
+    fetchVocabularyByLessonNo
 } = require('../controllers/vocabularyController');
 
 // Import authentication middleware
@@ -26,5 +27,7 @@ router.put('/vocabulary/:id', authenticateToken, editVocabulary);
 
 
 router.delete('/vocabulary/:id', authenticateToken, deleteVocabulary);
+router.get('/lesson/:lessonNo/vocabulary', fetchVocabularyByLessonNo);
+
 
 module.exports = router;

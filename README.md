@@ -171,10 +171,10 @@ JWT_SECRET=<your_secret_key>
 
 ## 📸 Screenshots
 ### User Interface
-![User Lessons Page](https://i.ibb.co.com/cDsH63v/screenshot-1.png)
+![User Lessons Page](https://i.ibb.co.com/vjvWtJD/screenshot-1-1.png)
 
 ### Admin Dashboard
-![Admin Manage Lessons](https://i.ibb.co.com/PYpfq5N/Screenshot-2025-01-08-at-6-55-32-PM.png)
+![Admin Manage Lessons](https://i.ibb.co.com/x3trZ80/Screenshot-2025-01-08-at-6-55-32-PM.png)
 
 
 ---

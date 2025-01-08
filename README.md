@@ -4,86 +4,86 @@
 ![License Badge](https://img.shields.io/badge/License-MIT-blue)
 
 ## 🚀 Live Links
-- **Live Website**: [Mellow Peony](https://mellow-peony-b34e6c.netlify.app/)
-- **Server**: [Vercel Server](https://japanese-learing-server.vercel.app/)
+- **🌐 Live Website**: [Client](https://mellow-peony-b34e6c.netlify.app/)
+- **🚧 Server**: [Vercel Server](https://japanese-learing-server.vercel.app/)
 
 ---
 
 ## 📂 Repository Links
-- **Client Repository**: [Japanese Learning Client](https://github.com/DKAbir111/japanese-learning-client.git)
-- **Server Repository**: [Japanese Learning Server](https://github.com/DKAbir111/japanese-leraring-server.git)
+- **🔧 Client Repository**: [Japanese Learning Client](https://github.com/DKAbir111/japanese-learning-client.git)
+- **🔧 Server Repository**: [Japanese Learning Server](https://github.com/DKAbir111/japanese-leraring-server.git)
 
 ---
 
 ## 🌟 Project Overview
-**~日本~ Learn** is an interactive Japanese vocabulary learning application designed to help users expand their vocabulary and improve communication skills in Japanese. This app aims to make learning engaging and accessible for users of all levels.
+**~日本~ Learn** is a user-friendly and engaging Japanese vocabulary learning platform designed to help learners improve their vocabulary and communication skills in Japanese. It features role-based access and interactive elements to make learning enjoyable and intuitive.
 
 ---
 
-## 🎯 Key Features
-### User Role:
-- **Lessons Access**: View and study lessons.
-- **Vocabulary Access**: Learn and listen to vocabulary words with pronunciation.
-- **Lesson Completion**: Celebrate achievements with animations.
-- **Tutorial Page**: Access 8-10 embedded YouTube tutorials for learning.
+## 🎡 Key Features
 
-### Admin Role:
-- **User Management**:
-  - Promote/Demote users.
-- **Content Management**:
-  - Add/Edit/Delete Lessons.
-  - Add/Edit/Delete Vocabulary.
-  - Manage YouTube Tutorials.
+### 🔑 Frontend Features
+1. **Interactive Lessons**: Users can view lessons dynamically rendered from the backend.
+2. **Vocabulary Pronunciation**: Play audio for correct pronunciation.
+3. **Lesson Completion Animation**: Celebrate achievements with confetti animations.
+4. **Responsive Design**: Fully optimized for mobile, tablet, and desktop devices.
+5. **User Authentication**: Role-based access using JWT.
+6. **Dynamic Pages**: Lessons and vocabulary pages update in real-time.
+7. **Protected Routes**: Secured routes with user role validation.
+8. **React Components**: Modular and reusable UI components.
+9. **Error Handling**: Custom error messages and visual indicators.
+10. **Framer Motion Animations**: Smooth transitions for better UX.
+
+### 🔧 Backend Features
+1. **User Management**: CRUD operations for users with role-based controls.
+2. **JWT Authentication**: Secure login and token verification.
+3. **Data Validation**: Middleware for validating requests.
+4. **Mongoose Models**: Schema definitions for Lessons, Vocabulary, and Users.
+5. **Password Hashing**: Secure user credentials using bcrypt.
+6. **CORS**: Enable cross-origin requests.
+7. **Admin Controls**: Manage users, lessons, and vocabulary.
+8. **RESTful API**: Well-structured endpoints for easy integration.
+9. **Error Handling Middleware**: Centralized error handling.
+10. **Secure Data Storage**: Encrypted JWT secrets and hashed passwords.
+11. **API Rate Limiting**: Protection against abuse with middleware.
+12. **Search Functionality**: Endpoint to search lessons and vocabulary.
 
 ---
 
-## 🖥️ Tech Stack
+## 🛠️ Tech Stack
 ### Frontend:
-- **React**
-- **Tailwind CSS**
-- **React Router DOM**
-- **React Confetti**
+- ![React](https://img.shields.io/badge/-React-blue?logo=react&logoColor=white) **React**
+- ![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white) **Tailwind CSS**
+- ![React Router](https://img.shields.io/badge/-ReactRouter-orange?logo=react-router&logoColor=white) **React Router DOM**
+- ![Framer Motion](https://img.shields.io/badge/-FramerMotion-purple?logo=framer&logoColor=white) **Framer Motion**
+- ![Font Awesome](https://img.shields.io/badge/-FontAwesome-green?logo=font-awesome&logoColor=white) **Font Awesome**
 
 ### Backend:
-- **Node.js**
-- **Express.js**
-- **MongoDB** (Database)
-
-### Authentication:
-- **JWT** for secure login and registration.
-
-### Hosting:
-- **Netlify** for Client
-- **Vercel** for Server
-
-### Icons and Assets:
-- **Font Awesome**
-- **Google Fonts**
+- ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white) **Node.js**
+- ![Express.js](https://img.shields.io/badge/-Express-black?logo=express&logoColor=white) **Express.js**
+- ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white) **MongoDB**
+- ![JWT](https://img.shields.io/badge/-JWT-black?logo=json-web-tokens&logoColor=white) **JWT**
+- ![Mongoose](https://img.shields.io/badge/-Mongoose-red?logo=javascript&logoColor=white) **Mongoose**
+- ![bcrypt](https://img.shields.io/badge/-bcrypt-yellowgreen?logo=security&logoColor=white) **bcrypt**
+- ![CORS](https://img.shields.io/badge/-CORS-lightblue) **CORS**
 
 ---
 
-## 📜 Project Requirements Fulfilled
-- **GitHub Management**:
-  - Achieved over 10 meaningful commits for both client and server repositories.
-- **Responsiveness**:
-  - Fully responsive on mobile, tablet, and desktop.
-- **Design**:
-  - Unique and aligned with the project theme.
-- **Error Handling**:
-  - Clear error messages and loading indicators.
-- **Authentication**:
-  - Secure system with JWT implemented for all roles.
-- **Code Quality**:
-  - Modular and readable.
-- **Protected Routes**:
-  - All routes secured with role-based access control.
+## 📄 Project Requirements Fulfilled
+- **GitHub Management**: Over 10 meaningful commits per repository.
+- **Responsiveness**: Optimized for multiple devices.
+- **Design**: Unique theme with intuitive UI.
+- **Error Handling**: User-friendly error messages.
+- **Authentication**: Role-based JWT authentication.
+- **Code Quality**: Modular, readable, and maintainable.
+- **Protected Routes**: Role-specific route access.
 
 ---
 
-## 🎨 Layout Structure
+## 🌈 Layout Structure
 ### For Users:
-- **Navbar**: Logo and navigation links.
-- **Footer**: Additional links and information.
+- **Navbar**: Logo and navigation.
+- **Footer**: Links and additional info.
 - **Pages**:
   - Lessons (Protected)
   - Tutorials (Protected)
@@ -91,9 +91,9 @@
   - Register
 
 ### For Admins:
-- **Dashboard**: Central management hub.
+- **Dashboard**: Manage app resources.
 - **Pages**:
-  - Lessons Management
+  - Manage Lessons
   - Add Lessons
   - Add Vocabulary
   - Manage Users
@@ -140,10 +140,10 @@ JWT_SECRET=<your_secret_key>
 
 ---
 
-## 📚 API Endpoints
+## 📂 API Endpoints
 ### Authentication:
-- `POST /api/auth/register`: User registration.
-- `POST /api/auth/login`: User login.
+- `POST /api/auth/register`: Register a new user.
+- `POST /api/auth/login`: Login user.
 
 ### Admin Routes:
 - `GET /api/admin/users`: View all users.
@@ -156,16 +156,16 @@ JWT_SECRET=<your_secret_key>
 - `DELETE /api/lessons/:id`: Delete a lesson (Admin only).
 
 ### Vocabulary:
-- `GET /api/vocabulary`: Fetch all vocabularies.
+- `GET /api/vocabulary`: Fetch vocabulary list.
 - `POST /api/vocabulary`: Add a vocabulary (Admin only).
-- `PUT /api/vocabulary/:id`: Update a vocabulary (Admin only).
-- `DELETE /api/vocabulary/:id`: Delete a vocabulary (Admin only).
+- `PUT /api/vocabulary/:id`: Update vocabulary (Admin only).
+- `DELETE /api/vocabulary/:id`: Delete vocabulary (Admin only).
 
 ---
 
 ## 🌐 Deployment
-- **Netlify**: Hosted the frontend for fast and reliable delivery.
-- **Vercel**: Hosted the backend API for secure and scalable performance.
+- **Netlify**: Hosted frontend for fast delivery.
+- **Vercel**: Hosted backend API for scalable performance.
 
 ---
 
@@ -180,7 +180,7 @@ JWT_SECRET=<your_secret_key>
 
 ---
 
-## 🧑‍💻 Developer
+## 💻 Developer
 **Darun Karas Abir**  
 [GitHub Profile](https://github.com/DKAbir111)
 

@@ -4,7 +4,7 @@
 ![License Badge](https://img.shields.io/badge/License-MIT-blue)
 
 ## 🚀 Live Links
-- **🌐 Live Website**: [Client](https://mellow-peony-b34e6c.netlify.app/)
+- **🌐 Live Website**: [Mellow Peony](https://mellow-peony-b34e6c.netlify.app/)
 - **🚧 Server**: [Vercel Server](https://japanese-learing-server.vercel.app/)
 
 ---
@@ -171,12 +171,11 @@ JWT_SECRET=<your_secret_key>
 
 ## 📸 Screenshots
 ### User Interface
-![User Lessons Page](#)
-![Tutorials Page](#)
+![User Lessons Page](https://i.ibb.co.com/cDsH63v/screenshot-1.png)
 
 ### Admin Dashboard
-![Admin Manage Lessons](#)
-![Admin Manage Users](#)
+![Admin Manage Lessons](#https://i.ibb.co.com/PYpfq5N/Screenshot-2025-01-08-at-6-55-32-PM.png)
+
 
 ---
 
